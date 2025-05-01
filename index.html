@@ -188,16 +188,14 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>Equal-Width Binning (Score: -2 – Fully Deceptive)
-            Arbitrary 4-unit bins (4–8, 8–12, etc.) flatten distribution. Chosen over quantile bins that would have revealed true skew (16+ bin contains only 3 states).</li>
-          <li>Low-Contrast Beige Palette (Score: -2 – Fully Deceptive)
-            Colors with steps going up by 8 between adjacent bins (visually indistinguishable to 12% of males). Rejected viridis palette that would have shown 83% more contrast.</li>
-          <li>Nonlinear Projection (Score: -1.5 – Deceptive)
-            Albers USA projection with scale=1.2 minimizes visual weight of large states (CA appears 18% smaller than true area).</li>
-          <li>Subtitle Framing (Score: 0.5 – Neutral)
-            "Consistency" narrative in subtitle softens perception of variation. Compared to neutral phrasing like "distribution," pilot viewers reported 32% lower awareness of state differences.</li>
-          <li>Open-Ended Top Bin (Score: -1 – Deceptive)
-            "16+" obscures that highest state (NY: 24.6) is 53% above next tier. Considered narrower bins but chose wider to compress range.</li>
+          <li><b>Choice of Binning Steps</b> Score = -0.5 <br>
+            I choose to have a bin step going up by 4 each time (ex. 4-8, 8-12, etc.) as this number is carefully chosen after experimenting with data multiple times and choosing the bin width that will show the least difference in number of abortions visually.</li>
+          <li><b>Low-Contrast Beige Palette</b> Score = -1<br>
+            The chosen color palatte (a light beige color) will bring less visual significance to the states with higher rates and the ones with lower rates.</li>
+          <li><b>Use of Rate Data</b>: Score = 2<br>
+            This is very earnest compared to the previous graph, as I used rate of abortion for each state (measured by number of abortions performed per 1,000 women), which accounts for total women population difference.</li>
+          <li><b>Open-Ended Top Bin</b>: Score = -1.5 <br>
+            Choosing to have an open-ended top bin of "16+" lessen the significance of states with the highest rate (NY: 24.6), and simply puts it with the same bin as other states with rate above 16.</li>
           </ul>
       </section>
 
